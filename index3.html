@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bex Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+<body class="aboutus">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="index2.html">Contacts</a></li>
+                <li><a href="index3.html">About Us</a></li>
+                <li><a href="index4.html">Discord Server</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    
+    <div class="secondintro">
+        <h1>About our team</h1>
+        <p>
+            We are a team of passionate developers and designers dedicated to creating amazing websites for our clients.<br>
+            Hoping to work with you soon!<br>
+            Just drop me a DM, if you're interested!<br>
+            also, the welcome sign is a button, press it and you'll see our website og template.
+        </p>
+    </div>
+    <a href="index.html"><button class="backbtn">Back to Home</button></a>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.querySelector('nav');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

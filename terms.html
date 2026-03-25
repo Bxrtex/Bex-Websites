@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - Bex Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+<body class="terms">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="index2.html">Contacts</a></li>
+                <li><a href="index3.html">About Us</a></li>
+                <li><a href="index4.html">Discord Server</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="policy-content">
+        <h1>Terms of Use</h1>
+
+        <p><strong>Last updated: March 19, 2026</strong></p>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing and using Bex Websites services, you accept and agree to be bound by the terms and provision of this agreement.</p>
+
+        <h2>2. Services</h2>
+        <p>Bex Websites provides professional website design and development services. Our standard pricing is €20 per website, which includes:</p>
+        <ul>
+            <li>Custom website design and development</li>
+            <li>Responsive design for mobile and desktop</li>
+            <li>Basic SEO optimization</li>
+            <li>Free lifetime support and updates</li>
+            <li>Unlimited revisions during development</li>
+        </ul>
+
+        <h2>3. Payment Terms</h2>
+        <p>Payment of €20 is required before work begins on your website project. All payments are final and non-refundable once development has started.</p>
+
+        <h2>4. Revisions and Support</h2>
+        <p>We offer unlimited revisions during the development process. After completion, we provide free lifetime support and updates at no additional cost.</p>
+
+        <h2>5. Intellectual Property</h2>
+        <p>Upon full payment, you will own the rights to your website content. Bex Websites retains the right to use the website in our portfolio and for promotional purposes.</p>
+
+        <h2>6. Limitation of Liability</h2>
+        <p>Bex Websites shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with our services.</p>
+
+        <h2>7. Contact Information</h2>
+        <p>For questions about these Terms of Use, please contact us:</p>
+        <ul>
+            <li>Phone: +37254510119</li>
+            <li>Discord: bxrtexplayz (display name: xetrex)</li>
+        </ul>
+
+        <h2>8. Changes to Terms</h2>
+        <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting on this page.</p>
+    </div>
+
+    <a href="index.html"><button class="backbtn">Back to Home</button></a>
+
+   
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
